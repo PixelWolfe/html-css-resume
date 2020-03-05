@@ -15,13 +15,13 @@ h1
 {
 	margin:0px;
 }
-h2
+h3
 {
 	margin:10px 0px;
 }
-h3
+h4
 {
-	margin:0px;
+	margin:10px 0px 0px 0px;
 }
 
 hr
@@ -32,7 +32,8 @@ hr
 	color: #486F88;
 }
 .card
-{
+{ 
+
 	width:350px;
 	margin: 0px 10px;
 }
@@ -77,14 +78,6 @@ hr
 	font-size: 14px;
 }
 
-#work-experience
-{
-}
-
-#education 
-{
-}
-
 #headshot
 {
 	align-self: center;
@@ -93,4 +86,23 @@ hr
 	border-style: solid;
 	border-width: 1px;
 	border-color: #486F88;
+}
+
+#stars-button
+{
+	background-color: green;
+	margin-top: 50px;
+	border-style: solid;
+	border-color: darkcyan;
+	border-radius: 15px;
+}
+
+#stars-button:hover
+{
+	cursor: pointer;
+}
+
+#audio-controller
+{
+	visibility: hidden;
 }

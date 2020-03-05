@@ -3,13 +3,19 @@
 <head>
 	<title>Rob's Resume!</title>
 	<link rel="icon" type="image/png" href="RobsPixelFavicon.png">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link id="stylesheet" rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Calligraffitti&display=swap" rel="stylesheet">
+	<script>
+		function swapStyleSheet(sheet)
+		{
+			document.getElementById('stylesheet').setAttribute('href', sheet);
+		}
+	</script>
 </head>
 <body>
 	<div id="main-container">
-		<hr class="full-width" style="margin-top:20px;">
+		<hr class="full-width" style="margin-top:60px;">
 		<div class="card" id="personal-info">
 			<div id="contact-information">
 				<h1>Robert Johnson</h1>
@@ -30,14 +36,43 @@
 		<div class="small-card">
 			<img id="headshot" src="robert.jpg" alt="A picture of Rob looking rather dashing">
 		</div>
-	<!-- 	<div id="headshot"> -->
-		<!-- </div> -->
-		<hr class="full-width">
-		<div class="card" id="education">
-			<h2>Education</h2>
+		<hr class="full-width" style="margin-bottom: 20px;">
+		<div class="card" id="work-experience">
+			<h3>Technical Work Experience</h3>
 			<hr>
 			<div>
-				<h3>St. Cloud State University</h3>
+				<h4 >Carl Zeiss Vision</h4>
+				<p class="text-center">Operator<br>
+				(Aug. 2019-March 2020)
+				</p>
+				<p> 
+					Operation and upkeep of various manual and automatic machines. Ability to problem solve on the fly to keep the surfacing department consistently up and running.
+				</p>
+			</div>
+			<div>
+				<h4>Paramount Center for the Arts</h4>
+				<p class="text-center">Stage Technician/Manager<br>
+				(May 2019 - Nov. 2020)
+				</p>
+				<p> 
+					Working technical knowledge of the Paramount's stage space, lighting rigs, storage spaces, also involved with upkeep.
+				</p>
+			</div>
+			<div>
+				<h4>Capital One</h4>
+				<p class="text-center">Fraud Specialist II<br>
+				(Sept. 2018 - Oct. 2018)
+				</p>
+				<p> 
+					Protecting high-risk personal and banking information from identity theft though the use of various confidential software and cross-checking of known public information.
+				</p>
+			</div>	
+		</div>
+		<div class="card" id="education">
+			<h3>Education</h3>
+			<hr>
+			<div>
+				<h4>St. Cloud State University</h4>
 
 				<p class="text-center">Bachelor's degree <br>
 				Theatre/Communication Studies<br>
@@ -47,58 +82,28 @@
 			</div>
 			<br>
 			<div>
-				<h3>Browerville High School</h3>
+				<h4>Browerville High School</h4>
 				<p class="text-center">Overall GPA 3.97 (2008-2012)<br></p>
 			
 				<p>Graduated as valedictorian of the class of 2012 as well as Senior Class President. Apart of various organizations such as National Honor Society, men's ensemble, pop singers, concert band and choir, pep band, jazz band, one act plays, and student government bodies.</p>
 			</div>
 		</div>
-		<div class="card" id="work-experience">
-			<h2>Work Experience</h2>
-			<hr>
-			<div>
-				<h3>Carl Zeiss Vision</h3>
-				<p class="text-center">Operator<br>
-				(Aug. 2019-March 2020)
-				</p>
-				<p> 
-					Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here.
-				</p>
-			</div>
-			<div>
-				<h3>Paramount Center for the Arts</h3>
-				<p class="text-center">Stage Technician/Manager<br>
-				(May 2019 - Nov. 2020)
-				</p>
-				<p> 
-					Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here.
-				</p>
-				<p class="text-center">Custodian/Event Clean<br>
-				(Nov. 2018 - May 2019)
-				</p>
-				<p> 
-					Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here.
-				</p>
-			</div>
-			<div>
-				<h3>Anton's Restaurant</h3>
-				<p class="text-center">Waiter<br>
-				(May 2019 - Aug. 2019)
-				</p>
-				<p> 
-					Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here.
-				</p>
-			</div>
-			<div>
-				<h3>Capital One</h3>
-				<p class="text-center">Fraud Specialist II<br>
-				(Sept. 2018 - Oct. 2018)
-				</p>
-				<p> 
-					Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here.
-				</p>
-			</div>	
+		<hr class="full-width" style="margin-top: 30px; margin-bottom: 10px">
+		<div class="card" style="width: 800px; height: 100px;">
+			<h3>Non-Technical Experience</h3>
+			<p class="text-center"> Found at 
+				<a target="_blank" href="https://www.linkedin.com/in/robert-johnson-323bb2aa/">LinkedIn
+				</a>
+			</p>
 		</div>
+			<button onclick="swapStyleSheet('stars.css')" id="stars-button">
+				More Fun.
+			</button>
+			<audio id="audio-controller" controls>
+				<source src="dreams.mp3" type="audio/mpeg">
+					Your browser does not support this rad audio element.
+			</audio>
 	</div>
 </body>
 </html>
+
