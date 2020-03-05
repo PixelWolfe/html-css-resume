@@ -1,6 +1,6 @@
 body
 {
-	background-image: url(opensource-alnilam-Stars-Pattern.png);
+	background-image: url(opensource-alnilam-Stars-Pattern.png); /*Background Pattern from dlpng.com*/
 	font-family: 'Playfair Display', serif;
 	text-align: center;
 }
@@ -31,6 +31,20 @@ hr
 	width: 50%;
 	color: #486F88;
 }
+a
+{
+    color: #486F88;
+}
+
+input
+{
+	padding: 0px 16px;
+}
+.mp3-credit-visibility
+{
+ 	color: white;
+	visibility: visible;
+}
 .card
 { 
 
@@ -60,11 +74,11 @@ hr
 	align-content: flex-start;
 	justify-content: center;
 
-	margin: 20px auto;
+	margin:50px auto;
 	width: 800px;
 	height: 1000px;
 
-	background-image: url(rice-paper.png);
+	background-image: url(rice-paper.png); /* Background pattern from Toptal Subtle Patterns */
 	box-shadow: 0 10px 50px rgba(0,0,0,0.80);
 }
 #about-me
@@ -101,6 +115,7 @@ hr
 #audio-controller
 {
 	height: 20px;
-	width: 25%;
+	width: 300px;
 	visibility: visible;
+	padding: 0px 16px;
 }
