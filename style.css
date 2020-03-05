@@ -1,0 +1,96 @@
+body
+{
+	background-color: #29526D;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+}
+
+p
+{
+	margin: 5px 0px 0px 20px;
+	text-align: left;
+}
+
+h1
+{
+	margin:0px;
+}
+h2
+{
+	margin:10px 0px;
+}
+h3
+{
+	margin:0px;
+}
+
+hr
+{
+	margin-top: 4px;
+	margin-bottom: 4px;
+	width: 50%;
+	color: #486F88;
+}
+.card
+{
+	width:350px;
+	margin: 0px 10px;
+}
+.small-card
+{
+	padding-left: 20px;
+	display:flex;
+	width:250px;
+}
+.text-center
+{
+	text-align: center;
+	justify-content: center;
+}
+
+.full-width
+{
+	width: 89%;
+}
+#main-container
+{
+	display:flex;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	justify-content: center;
+
+	margin: 20px auto;
+	width: 800px;
+	height: 1000px;
+
+	background-image: url(rice-paper.png);
+	box-shadow: 0 10px 50px rgba(0,0,0,0.80);
+}
+#about-me
+{
+	font-size: 20px;
+	font-family: 'Calligraffitti', cursive;
+}
+
+#contact-information
+{
+	font-size: 14px;
+}
+
+#work-experience
+{
+}
+
+#education 
+{
+}
+
+#headshot
+{
+	align-self: center;
+	height: 175px;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: #486F88;
+}
